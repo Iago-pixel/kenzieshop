@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import axios from "axios";
+import { addProducts } from "./store/modules/products/actions";
+import GlobalStyle from "./styles/global";
+import { Routes } from "./routes";
 
 function App() {
+  const dispatch = useDispatch();
+
+  //MOTAGEM
+  useEffect(() => {
+    axios
+      .get(
+        "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
+      )
+      .then((res) => {
+        console.log(res.data);
+
+        dispatch(addProducts(res.data));
+      })
+      .catch((err) => console.log(err));
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle />
+      <Routes />
     </div>
   );
 }
