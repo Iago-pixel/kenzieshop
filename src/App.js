@@ -4,6 +4,8 @@ import axios from "axios";
 import { addProducts } from "./store/modules/products/actions";
 import GlobalStyle from "./styles/global";
 import { Routes } from "./routes";
+import { Header } from "./components/Header";
+import { Container } from "./AppStyle";
 
 function App() {
   const dispatch = useDispatch();
@@ -23,10 +25,11 @@ function App() {
   });
 
   return (
-    <div className="App">
+    <Container className="App">
       <GlobalStyle />
+      <Header />
       <Routes />
-    </div>
+    </Container>
   );
 }
 

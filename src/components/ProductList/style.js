@@ -32,7 +32,7 @@ export const Content = styled.ul`
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
-  li + li {
-    margin-left: 3vw;
+  @media (min-width: 850px) {
+    justify-content: space-between;
   }
 `;
