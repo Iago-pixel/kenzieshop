@@ -9,10 +9,11 @@ export default createGlobalStyle`
 }
 
 :root{
-    --darkpink: #e591c2;
-    --pink: #FCE7F3;
-    --orange: rgb(216, 153, 52);
+    --darkpink: #e9959d;
+    --pink: #fce8cf;
+    --orange: #fbbd5a;
     --grey:#ddd;
+    --lightgrey: #F7F7F7;
 }
 
 .App{

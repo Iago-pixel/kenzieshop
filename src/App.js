@@ -17,8 +17,6 @@ function App() {
         "https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
       )
       .then((res) => {
-        console.log(res.data);
-
         dispatch(addProducts(res.data));
       })
       .catch((err) => console.log(err));

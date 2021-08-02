@@ -7,5 +7,6 @@ export const Container = styled.header`
   height: 200px;
   img {
     border-radius: 100%;
+    cursor: pointer;
   }
 `;
