@@ -11,7 +11,12 @@ export const Product = ({ item }) => {
   return (
     <Container onClick={handleClick}>
       <ProductDisplay>
-        <img src={item.api_featured_image} alt="produto" />
+        <img
+          src={item.api_featured_image}
+          alt="produto"
+          width="158px"
+          height="184px"
+        />
         <p className="purchaseAppear">
           <FiPlus size={15} />
           &nbsp; PURCHASE

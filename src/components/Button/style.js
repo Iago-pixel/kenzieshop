@@ -6,6 +6,10 @@ export const Container = styled.div`
     border: 3px solid black;
     font-size: 0.8rem;
     font-weight: 300;
-    padding: 5px 1rem;
+    padding: 10px 1.5rem;
+    :hover {
+      color: var(--darkpink);
+      border-color: var(--darkpink);
+    }
   }
 `;

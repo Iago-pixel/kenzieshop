@@ -5,7 +5,6 @@ import { SimpleButton } from "../SimpleButton";
 import { FiShoppingCart, FiChevronsRight } from "react-icons/fi";
 import { useHistory } from "react-router";
 import { useState } from "react";
-import { Button } from "../Button";
 
 export const Cart = ({ extended }) => {
   const history = useHistory();
@@ -70,9 +69,6 @@ export const Cart = ({ extended }) => {
           </span>
         </p>
       </div>
-      <Button className="purchase" onClick={() => history.push("/inBuilding")}>
-        Purchase
-      </Button>
     </Container>
   );
 };
