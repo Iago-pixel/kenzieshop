@@ -6,6 +6,8 @@ import GlobalStyle from "./styles/global";
 import { Routes } from "./routes";
 import { Header } from "./components/Header";
 import { Container } from "./AppStyle";
+import ScrollButton from "react-scroll-button";
+import { Footer } from "./components/Footer";
 
 function App() {
   const dispatch = useDispatch();
@@ -27,6 +29,14 @@ function App() {
       <GlobalStyle />
       <Header />
       <Routes />
+      <ScrollButton
+        behavior={"smooth"}
+        buttonBackgroundColor={"black"}
+        iconType={"arrow-up"}
+        style={{ fontSize: "24px" }}
+        targetId="top"
+      />
+      <Footer />
     </Container>
   );
 }

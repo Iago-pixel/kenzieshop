@@ -8,7 +8,7 @@ export const Header = () => {
     history.push("./");
   };
   return (
-    <Container>
+    <Container id="top">
       <img src={logo} alt="logo" onClick={goHome} />
     </Container>
   );
