@@ -24,7 +24,7 @@ export const Container = styled.li`
   width: 45vw;
   min-width: 158px;
   max-width: 250px;
-  margin: 0 1rem 1rem 0;
+  margin: 0 0 1rem 0;
   img {
     margin: 0 auto;
   }

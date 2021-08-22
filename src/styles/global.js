@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, keyframes } from "styled-components";
 
 export default createGlobalStyle`
 *{
@@ -31,5 +31,14 @@ a{
 
 ul{
     list-style: none;
+}
+`;
+
+export const appear = keyframes`
+from{
+  opacity: 0;
+}
+to{
+  opacity: 1;
 }
 `;

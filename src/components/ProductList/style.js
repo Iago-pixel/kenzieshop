@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  padding: 0 1rem;
+`;
 
 export const Title = styled.div`
   position: relative;
@@ -30,8 +32,13 @@ export const Title = styled.div`
 export const Content = styled.ul`
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
   list-style: none;
+  flex-direction: column;
+  @media (min-width: 425px) {
+    flex-direction: row;
+  }
   @media (min-width: 850px) {
     justify-content: space-between;
   }

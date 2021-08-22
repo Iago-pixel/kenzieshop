@@ -2,6 +2,7 @@ import { Switch, Route } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { CartPage } from "../pages/CartPage";
 import { WebsiteBuilder } from "../pages/WebsiteBuilder";
+import { Register } from "../pages/Register";
 
 export const Routes = () => {
   return (
@@ -14,6 +15,9 @@ export const Routes = () => {
       </Route>
       <Route path="/inBuilding">
         <WebsiteBuilder />
+      </Route>
+      <Route path="/register">
+        <Register />
       </Route>
     </Switch>
   );

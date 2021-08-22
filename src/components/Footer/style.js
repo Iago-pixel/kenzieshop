@@ -8,8 +8,9 @@ export const Container = styled.footer`
     justify-content: center;
     align-items: center;
     min-height: 100px;
-    padding: 0 10px;
+    padding: 10px;
     flex-direction: column;
+    text-align: center;
     @media (min-width: 600px) {
       flex-direction: row;
     }
@@ -37,6 +38,7 @@ export const Container = styled.footer`
     .registerEmail {
       display: flex;
       input {
+        min-width: 200px;
         height: 2.5rem;
         width: 30vw;
         border: none;

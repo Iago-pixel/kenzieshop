@@ -5,7 +5,6 @@ import { addProducts } from "./store/modules/products/actions";
 import GlobalStyle from "./styles/global";
 import { Routes } from "./routes";
 import { Header } from "./components/Header";
-import { Container } from "./AppStyle";
 import ScrollButton from "react-scroll-button";
 import { Footer } from "./components/Footer";
 
@@ -25,7 +24,7 @@ function App() {
   });
 
   return (
-    <Container className="App">
+    <div className="App">
       <GlobalStyle />
       <Header />
       <Routes />
@@ -37,7 +36,7 @@ function App() {
         targetId="top"
       />
       <Footer />
-    </Container>
+    </div>
   );
 }
 

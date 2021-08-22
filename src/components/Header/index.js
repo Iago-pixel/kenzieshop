@@ -9,6 +9,7 @@ export const Header = () => {
   };
   return (
     <Container id="top">
+      <div className="headerBar"></div>
       <img src={logo} alt="logo" onClick={goHome} />
     </Container>
   );
